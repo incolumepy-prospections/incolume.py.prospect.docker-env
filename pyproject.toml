@@ -34,6 +34,9 @@ exclude = [
   "my_package/excluded.py",
   "tests/",
   "coverage_report",
+  "Dockerfile",
+  "*compose*",
+  "*stack*",
 ]
 
 
