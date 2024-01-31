@@ -17,6 +17,28 @@ Disponível em [docs/prefacio.md#ferramentas-aplicadas](docs/prefacio.md#ferrame
 Exemplos e outras curiosidades sobre este projeto podem
 ser visualizadas em [docs/api](docs/api/index.md).
 
+## Dockerizar um simples script Python script
+
+1. Construir a Docker image
+
+```shell
+$ docker build -t local/incolume-py-prospect-docker-env .
+```
+
+2. Rodar a Docker image (iniciar o container)
+Without user input:
+
+```shell
+$ docker run local/incolume-py-prospect-docker-env
+```
+
+If you want user input (comment out the break in main.py):
+
+```shell
+$ docker run -i -t local/incolume-py-prospect-docker-env
+```
+
+> -i: interactive, -t: pseudo terminal
 
 ## Registro de Mudanças ##
 Disponível em [docs/about/CHANGELOG.md](docs/about/CHANGELOG.md).
